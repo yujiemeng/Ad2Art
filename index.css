@@ -1,0 +1,145 @@
+.adstoart-img {
+  width: 100%;
+}
+.div_border{
+  height: 228px;
+  border: solid 1px gray;
+  color: #fff;
+  margin: 10px 10px 0 10px;
+}
+.hover_ads span.bg{
+  position: absolute;
+  z-index: 2;
+  width:100%;
+  height:100%;
+  top:0px;left:0px;
+  background-color: rgba(0, 0, 0, .7);
+  text-align: left;
+  cursor: pointer;
+  opacity: 0;
+}
+.hover_ads:hover span {
+  vertical-align : bottom;
+  opacity: 1 !important;
+}
+
+
+.hover_ads:hover span p {
+  padding-top: 7px !important;
+  padding-bottom: 0px !important;
+  vertical-align : bottom;
+  padding-left: 10%;
+  z-index: 2;
+  color : #fff;
+  margin-bottom: 0px;
+  margin: 0;
+}
+.hover_ads .readdetail{
+  background-color: #002FA7;
+  color: #FFF;
+  text-align: left;
+  z-index: 2;
+  padding: 8px 20px 8px 20px;
+  font-size: 16px;
+}
+
+.readp{
+  margin-top: 5% !important;
+}
+
+.art_name{
+  font-size: 20px;
+}
+
+.lovers {
+  font-size: 18px;
+  margin-top: 4% !important;
+}
+
+.artclass {
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+
+.testswitch {
+    position: relative;
+    float: left;
+    width: 90px;
+    margin: 0;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+
+.testswitch-checkbox {
+    display: none;
+}
+
+.testswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 20px;
+}
+
+.testswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.testswitch-inner::before, .testswitch-inner::after {
+    display: block;
+    float: right;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family:
+    Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.testswitch-inner::after {
+    content: attr(data-on);
+    padding-left: 10px;
+    background-color: #00e500;
+    color: #FFFFFF;
+}
+
+.testswitch-inner::before {
+    content: attr(data-off);
+    padding-right: 10px;
+    background-color: #EEEEEE;
+    color: #999999;
+    text-align: right;
+}
+
+.testswitch-switch {
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 4px;
+    background: #FFFFFF;
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #999999;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.testswitch-checkbox:checked + .testswitch-label .testswitch-inner {
+    margin-left: 0;
+}
+
+.testswitch-checkbox:checked + .testswitch-label .testswitch-switch {
+    right: 0px;
+}

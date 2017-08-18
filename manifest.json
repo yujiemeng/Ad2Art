@@ -1,0 +1,32 @@
+{
+  "name": "Ads to art!",
+  "description": "You Know It!",
+  "version": "1.0",
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "*://*/*",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "notifications"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "You know it!",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["./adsarea.js", "./arts.js", "./index.js", "jquery.js"],
+      "css": ["./index.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "manifest_version": 2
+}
